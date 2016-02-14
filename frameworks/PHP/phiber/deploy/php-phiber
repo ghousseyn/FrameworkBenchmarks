@@ -1,0 +1,9 @@
+<VirtualHost *:8080>
+  Alias /php-phiber/ "/home/tfb/FrameworkBenchmarks/php-phiber/public_html/"
+  <Directory /home/tfb/FrameworkBenchmarks/php-phiber/public_html/>
+          #Options Indexes FollowSymLinks MultiViews
+          #AllowOverride None
+          Order allow,deny
+          allow from all
+  </Directory>
+</VirtualHost>
